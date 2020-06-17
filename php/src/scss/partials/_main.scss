@@ -1,0 +1,21 @@
+.album-box {
+  width: 200px;
+  background-color: darkslategrey;
+  color: white;
+}
+
+
+.cd-box {
+  @include flex(center, wrap);
+
+  .album-box {
+    text-align: center;
+    margin: 40px 25px 20px 25px;
+
+    img {
+      width: 160px;
+      padding: 20px;
+    }
+
+  }
+}
