@@ -1,3 +1,4 @@
-body {
-  background-color: green;
-}
+@import 'partials/_normalize';
+@import 'partials/_variables';
+@import 'partials/_mixin';
+@import 'partials/_common';

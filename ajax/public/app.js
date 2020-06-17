@@ -10991,7 +10991,25 @@ return jQuery;
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 $(document).ready(function () {
-  alert('ciao');
+  $.ajax({
+    'url': '../ajax/dischi.php',
+    'method': 'GET',
+    'success': function success(data) {
+      var dischi = data;
+      console.log(dischi);
+
+      for (var i = 0; i < dischi.length; i++) {
+        var disco_corrente = dischi[i];
+        var dati_cd = {
+          'artista': data.author
+        };
+        console.log(dati_cd);
+      }
+    },
+    'error': function error() {
+      alert('errore');
+    }
+  });
 });
 
 /***/ }),
