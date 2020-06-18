@@ -1,5 +1,5 @@
-
-dischi = [
+<?php
+$dischi = [
     [
         'poster' => 'https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg',
         'title' => 'New Jersey',
@@ -66,8 +66,13 @@ dischi = [
     [
         'poster' => 'https://m.media-amazon.com/images/I/71K9CbNZPsL._SS500_.jpg',
         'title' => 'Bad',
-        'author' => 'Michael JacKson',
+        'author' => 'Michael Jackson',
         'genre' => 'Pop',
         'year' => '1987'
     ]
 ];
+
+header('Content-Type: application/json');
+
+echo json_encode($dischi);
+?>

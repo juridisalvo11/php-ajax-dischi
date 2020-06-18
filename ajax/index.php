@@ -13,9 +13,20 @@
     </header>
     <main>
       <div class="container">
+        <div id="box-dischi">
 
+        </div>
       </div>
     </main>
+    <script id="cd-template" type="text/x-handlebars-template">
+      <div class="box-cd">
+        <img src="{{copertina}}" alt="">
+        <h3>{{titolo}}</h3>
+        <p>{{artista}}</p>
+        <p>{{genere}}</p>
+        <p>{{anno}}</p>
+      </div>
+    </script>
     <script src="public/app.js" charset="utf-8"></script>
   </body>
 </html>
