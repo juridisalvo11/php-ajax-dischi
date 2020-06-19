@@ -8,7 +8,7 @@ require ('dischi.php');
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Php dischi</title>
     <link rel="stylesheet" href="dist/app.css">
   </head>
   <body>
@@ -25,7 +25,7 @@ require ('dischi.php');
           <?php
           foreach ($dischi as $disco) { ?>
             <div class="album-box">
-            <img src=" <?php echo $disco['poster']?>" alt="">
+            <img src=" <?php echo $disco['poster']?>" alt="<?php echo $disco['title'] ?>">
             <h3><?php echo $disco['title'] ?></h3>
             <p><?php echo $disco['author'] ?></p>
             <p><?php echo $disco['genre'] ?></p>

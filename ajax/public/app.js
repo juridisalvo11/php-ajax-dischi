@@ -16106,7 +16106,7 @@ $(document).ready(function () {
   var source = document.getElementById("cd-template").innerHTML;
   var template = Handlebars.compile(source);
   $.ajax({
-    'url': 'http://localhost:8888/boolean/playground/esercizi/php-ajax-dischi/ajax/dischi.php',
+    'url': 'dischi.php',
     'method': 'GET',
     'success': function success(data) {
       var dischi = data; //console.log(dischi);

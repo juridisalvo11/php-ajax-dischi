@@ -7,7 +7,7 @@ $(document).ready(function(){
   var template = Handlebars.compile(source);
 
   $.ajax({
-    'url': 'http://localhost:8888/boolean/playground/esercizi/php-ajax-dischi/ajax/dischi.php',
+    'url': 'dischi.php',
     'method': 'GET',
     'success': function(data) {
       var dischi = data;
